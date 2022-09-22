@@ -4,7 +4,7 @@ import {
     selectInputList,
     selectValue
 } from "./features/inputThings/InputThingsSlice";
-import { useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import Counter from "./components/Counter";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
             <EntryField></EntryField>
             <Counter counter={value}/>
             {list ?
-                list.map((el,key) => <ListEntry key={key} date={el}/>)
+                list.map((el, key) => <ListEntry key={key} date={el}/>)
                 :
                 <p>{0}</p>
             }

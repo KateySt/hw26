@@ -3,7 +3,7 @@ import React from 'react';
 const ListEntry = (props) => {
     return (
         <div>
-         <p>{props.date}</p>
+            <p>{props.date}</p>
         </div>
     );
 };

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import {connect, useDispatch} from "react-redux";
-import {setListF, setList} from "../features/inputThings/InputThingsSlice";
+import React from 'react';
+import {connect} from "react-redux";
+import {setListF} from "../features/inputThings/InputThingsSlice";
 import {bindActionCreators} from "redux";
 
 
