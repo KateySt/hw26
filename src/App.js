@@ -10,6 +10,7 @@ import Counter from "./components/Counter";
 function App() {
     const list = useSelector(selectInputList);
     const value = useSelector(selectValue);
+
     return (
         <div className="App">
             <EntryField></EntryField>

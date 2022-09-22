@@ -19,8 +19,8 @@ export const selectInputList = (state) => state.inputThings.ListInputThings
 
 export const selectValue = (state) => state.inputThings.value
 
-export const getListF = (i) => (dispatch) => {
-    dispatch(setList([i]))
+export const setListF = (i) => (dispatch) => {
+    dispatch(setList(i))
 }
 
 export default InputThingsSlice.reducer
