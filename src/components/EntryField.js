@@ -1,8 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
-import {setListF} from "../features/inputThings/InputThingsSlice";
+import {setList} from "../storege/actions";
 import {bindActionCreators} from "redux";
-
 
 class EntryField extends React.Component {
     constructor(props) {
@@ -43,18 +42,14 @@ class EntryField extends React.Component {
 
 const mapStateToProps = function (state) {
     return {
-        counter: state.inputThings.value,
+        value: state.value,
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        actions: bindActionCreators(setListF, dispatch)
+        actions: bindActionCreators(setList, dispatch)
     }
 }
 
-const mergeProps = (stateProps, dispatchProps, ownProps) => {
-    return Object.assign({}, ownProps, stateProps, dispatchProps);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(EntryField);
+export default connect(mapStateToProps, mapDispatchToProps)(EntryField);

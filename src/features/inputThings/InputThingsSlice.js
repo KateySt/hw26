@@ -1,4 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit'
+/*import {createSlice} from '@reduxjs/toolkit'
 
 export const InputThingsSlice = createSlice({
     name: 'inputThings',
@@ -24,3 +24,5 @@ export const setListF = (i) => (dispatch) => {
 }
 
 export default InputThingsSlice.reducer
+
+ */
