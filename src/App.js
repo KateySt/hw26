@@ -4,8 +4,8 @@ import {useSelector} from "react-redux";
 import Counter from "./components/Counter";
 
 function App() {
-    const list = useSelector((state) => state.ListInputThings);
-    const value = useSelector((state) => state.value);
+    const list = useSelector((state) => state.toDoList);
+    const value = useSelector((state) => state.counter);
 
     return (
         <div className="App">
